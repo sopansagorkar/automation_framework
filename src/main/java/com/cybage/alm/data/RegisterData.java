@@ -1,6 +1,14 @@
 package com.cybage.alm.data;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import org.apache.poi.ss.usermodel.Row;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class RegisterData {
 
@@ -15,6 +23,8 @@ public class RegisterData {
 	public String country;
 	public String uName;
 	public String passWord;
+	public static XSSFWorkbook workbook;
+	public static XSSFSheet sheet;
 
 	public RegisterData buildRegisterData(Row row) {
 		RegisterData rd = new RegisterData();
@@ -30,6 +40,35 @@ public class RegisterData {
 		rd.setuName(row.getCell(9).toString().trim());
 		rd.setPassWord(row.getCell(10).toString().trim());
 		return rd;
+	}
+
+	public static RegisterData[][] getRegisterData(String FilePath, String SheetName) {
+		RegisterData[][] tabArray = null;
+		RegisterData registerData = new RegisterData();
+		ArrayList<RegisterData> arrayList = new ArrayList<RegisterData>();
+		File file = new File(FilePath);
+		try {
+			FileInputStream fis = new FileInputStream(file);
+			workbook = new XSSFWorkbook(fis);
+		} catch (Exception e) {
+		}
+		sheet = workbook.getSheetAt(0);
+
+		Iterator<Row> rowIterator = sheet.iterator();
+		while (rowIterator.hasNext()) {
+			Row row = (Row) rowIterator.next();
+			if (row.getRowNum() == 0)
+				continue;
+			arrayList.add(registerData.buildRegisterData(row));
+		}
+		System.out.println(arrayList.size());
+		tabArray = new RegisterData[arrayList.size()][1];
+		for (int i = 0; i < arrayList.size(); i++) {
+
+			RegisterData data = (RegisterData) arrayList.get(i);
+			tabArray[i][0] = data;
+		}
+		return tabArray;
 	}
 
 	public String getFirstName() {

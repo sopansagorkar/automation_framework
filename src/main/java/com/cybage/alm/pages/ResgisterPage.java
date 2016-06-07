@@ -1,15 +1,15 @@
 package com.cybage.alm.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
-import com.cybage.alm.data.Driver;
+
 import com.cybage.alm.data.RegisterData;
+import com.cybage.alm.utilities.Base;
 
-public class ResgisterPage {
+public class ResgisterPage extends Base{
 
-	public void register(RegisterData registerData) {
-		WebDriver driver = new Driver().getDriver();
+	public static void register(RegisterData registerData) {
+		setup();
 		driver.get("http://newtours.demoaut.com");
 		driver.findElement(By.linkText("REGISTER")).click();
 		driver.findElement(By.name("firstName")).sendKeys(registerData.getFirstName());
