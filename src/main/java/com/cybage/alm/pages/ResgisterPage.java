@@ -8,23 +8,24 @@ import com.cybage.alm.data.RegisterData;
 
 public class ResgisterPage {
 
-	public void register(Object i, Object registerData) {
-		RegisterData data = (RegisterData) registerData;
+	public void register(RegisterData registerData) {
 		WebDriver driver = new Driver().getDriver();
+		driver.get("http://newtours.demoaut.com");
 		driver.findElement(By.linkText("REGISTER")).click();
-		driver.findElement(By.name("firstName")).sendKeys(data.getFirstName());
-		driver.findElement(By.name("lastName")).sendKeys(data.getLastName());
-		driver.findElement(By.name("phone")).sendKeys(data.getPhone());
-		driver.findElement(By.id("userName")).sendKeys(data.getuName());
-		driver.findElement(By.name("address1")).sendKeys(data.getAddress());
-		driver.findElement(By.name("city")).sendKeys(data.getCity());
-		driver.findElement(By.name("state")).sendKeys(data.getState());
-		driver.findElement(By.name("postalCode")).sendKeys(data.getPincode());
-		new Select(driver.findElement(By.name("country"))).selectByVisibleText("INDIA");
-		driver.findElement(By.id("email")).sendKeys(data.getEmail());
-		driver.findElement(By.name("password")).sendKeys(data.getPassWord());
-		driver.findElement(By.name("confirmPassword")).sendKeys(data.getPassWord());
+		driver.findElement(By.name("firstName")).sendKeys(registerData.getFirstName());
+		driver.findElement(By.name("lastName")).sendKeys(registerData.getLastName());
+		driver.findElement(By.name("phone")).sendKeys(registerData.getPhone());
+		driver.findElement(By.id("userName")).sendKeys(registerData.getuName());
+		driver.findElement(By.name("address1")).sendKeys(registerData.getAddress());
+		driver.findElement(By.name("city")).sendKeys(registerData.getCity());
+		driver.findElement(By.name("state")).sendKeys(registerData.getState());
+		driver.findElement(By.name("postalCode")).sendKeys(registerData.getPincode());
+		new Select(driver.findElement(By.name("country"))).selectByVisibleText(registerData.getCountry());
+		driver.findElement(By.id("email")).sendKeys(registerData.getEmail());
+		driver.findElement(By.name("password")).sendKeys(registerData.getPassWord());
+		driver.findElement(By.name("confirmPassword")).sendKeys(registerData.getPassWord());
 		driver.findElement(By.name("register")).click();
+		driver.quit();
 	}
 
 }

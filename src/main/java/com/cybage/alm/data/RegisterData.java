@@ -1,5 +1,7 @@
 package com.cybage.alm.data;
 
+import org.apache.poi.ss.usermodel.Row;
+
 public class RegisterData {
 
 	public String firstName;
@@ -13,6 +15,22 @@ public class RegisterData {
 	public String country;
 	public String uName;
 	public String passWord;
+
+	public RegisterData buildRegisterData(Row row) {
+		RegisterData rd = new RegisterData();
+		rd.setFirstName(row.getCell(0).toString().trim());
+		rd.setLastName(row.getCell(1).toString().trim());
+		rd.setPhone(row.getCell(2).toString().trim());
+		rd.setEmail(row.getCell(3).toString().trim());
+		rd.setAddress(row.getCell(4).toString().trim());
+		rd.setCity(row.getCell(5).toString().trim());
+		rd.setState(row.getCell(6).toString().trim());
+		rd.setPincode(row.getCell(7).toString().trim());
+		rd.setCountry(row.getCell(8).toString().trim());
+		rd.setuName(row.getCell(9).toString().trim());
+		rd.setPassWord(row.getCell(10).toString().trim());
+		return rd;
+	}
 
 	public String getFirstName() {
 		return firstName;

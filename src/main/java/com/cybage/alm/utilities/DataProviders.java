@@ -1,7 +1,11 @@
 package com.cybage.alm.utilities;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
 
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -17,8 +21,6 @@ public class DataProviders {
 	XSSFSheet sheet;
 
 	private static XSSFSheet ExcelWSheet;
-
-	private static XSSFWorkbook ExcelWBook;
 
 	private static XSSFCell Cell;
 
@@ -40,56 +42,29 @@ public class DataProviders {
 	public Object[][] getLoginData(String FilePath, String SheetName) {
 
 		Object[][] tabArray = null;
-
+		LoginData loginData = new LoginData();
+		ArrayList<LoginData> arrayList = new ArrayList<LoginData>();
+		File file = new File(FilePath);
 		try {
-
-			FileInputStream ExcelFile = new FileInputStream(FilePath);
-
-			ExcelWBook = new XSSFWorkbook(ExcelFile);
-
-			ExcelWSheet = ExcelWBook.getSheet(SheetName);
-
-			int startRow = 1;
-
-			int startCol = 0;
-
-			int ci, cj;
-
-			int totalRows = ExcelWSheet.getLastRowNum();
-
-			int totalCols = 2;
-
-			tabArray = new Object[totalRows][totalCols];
-
-			ci = 0;
-			LoginData loginData;
-			for (int i = startRow; i <= totalRows; i++, ci++) {
-
-				cj = 0;
-				loginData = new LoginData();
-
-				for (int j = startCol; j < totalCols; j++, cj++) {
-
-					/*
-					 * tabArray[ci][cj] = getCellData(i, j);
-					 * 
-					 * System.out.println(tabArray[ci][cj]);
-					 */
-					if (j == 0) {
-						loginData.setUserName(getCellData(i, j));
-						tabArray[ci][cj] = new Integer(i);
-					} else {
-						loginData.setPassowrd(getCellData(i, j));
-						tabArray[ci][cj] = loginData;
-
-					}
-
-				}
-
-			}
+			FileInputStream fis = new FileInputStream(file);
+			workbook = new XSSFWorkbook(fis);
 		} catch (Exception e) {
+		}
+		sheet = workbook.getSheetAt(0);
 
-			System.out.println(e);
+		Iterator<Row> rowIterator = sheet.iterator();
+		while (rowIterator.hasNext()) {
+			Row row = (Row) rowIterator.next();
+			if (row.getRowNum() == 0)
+				continue;
+			arrayList.add(loginData.buildLoginData(row));
+		}
+		System.out.println(arrayList.size());
+		tabArray = new LoginData[arrayList.size()][1];
+		for (int i = 0; i < arrayList.size(); i++) {
+
+			LoginData data = (LoginData) arrayList.get(i);
+			tabArray[i][0] = data;
 		}
 		return tabArray;
 
@@ -97,76 +72,31 @@ public class DataProviders {
 
 	public Object[][] getRegisterData(String FilePath, String SheetName) {
 		Object[][] tabArray = null;
-
+		RegisterData registerData = new RegisterData();
+		ArrayList<RegisterData> arrayList = new ArrayList<RegisterData>();
+		File file = new File(FilePath);
 		try {
-
-			FileInputStream ExcelFile = new FileInputStream(FilePath);
-
-			ExcelWBook = new XSSFWorkbook(ExcelFile);
-
-			ExcelWSheet = ExcelWBook.getSheet(SheetName);
-
-			int startRow = 1;
-
-			int startCol = 0;
-
-			int ci, cj;
-
-			int totalRows = ExcelWSheet.getLastRowNum();
-
-			int totalCols = 11;
-
-			tabArray = new String[totalRows][totalCols];
-
-			ci = 0;
-			RegisterData registerData;
-			for (int i = startRow; i <= totalRows; i++, ci++) {
-
-				cj = 0;
-				registerData = new RegisterData();
-
-				for (int j = startCol; j < totalCols; j++, cj++) {
-
-					/*
-					 * tabArray[ci][cj] = getCellData(i, j);
-					 * 
-					 * System.out.println(tabArray[ci][cj]);
-					 */
-					if (j == 0) {
-						registerData.setFirstName((getCellData(i, j)));
-						registerData.setLastName((getCellData(i, j)));
-						registerData.setPhone((getCellData(i, j)));
-						registerData.setuName((getCellData(i, j)));
-						registerData.setAddress((getCellData(i, j)));
-						registerData.setCity((getCellData(i, j)));
-						registerData.setState((getCellData(i, j)));
-						registerData.setPincode((getCellData(i, j)));
-						registerData.setEmail((getCellData(i, j)));
-						registerData.setPassWord((getCellData(i, j)));
-						tabArray[ci][cj] = new Integer(i);
-					} else {
-						registerData.setFirstName((getCellData(i, j)));
-						registerData.setLastName((getCellData(i, j)));
-						registerData.setPhone((getCellData(i, j)));
-						registerData.setuName((getCellData(i, j)));
-						registerData.setAddress((getCellData(i, j)));
-						registerData.setCity((getCellData(i, j)));
-						registerData.setState((getCellData(i, j)));
-						registerData.setPincode((getCellData(i, j)));
-						registerData.setEmail((getCellData(i, j)));
-						registerData.setPassWord((getCellData(i, j)));
-						tabArray[ci][cj] = registerData;
-
-					}
-
-				}
-
-			}
+			FileInputStream fis = new FileInputStream(file);
+			workbook = new XSSFWorkbook(fis);
 		} catch (Exception e) {
-			// TODO: handle exception
+		}
+		sheet = workbook.getSheetAt(0);
+
+		Iterator<Row> rowIterator = sheet.iterator();
+		while (rowIterator.hasNext()) {
+			Row row = (Row) rowIterator.next();
+			if (row.getRowNum() == 0)
+				continue;
+			arrayList.add(registerData.buildRegisterData(row));
+		}
+		System.out.println(arrayList.size());
+		tabArray = new RegisterData[arrayList.size()][1];
+		for (int i = 0; i < arrayList.size(); i++) {
+
+			RegisterData data = (RegisterData) arrayList.get(i);
+			tabArray[i][0] = data;
 		}
 		return tabArray;
-
 	}
 
 	public static String getCellData(int RowNum, int ColNum) throws Exception {

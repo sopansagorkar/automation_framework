@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Regression Test Suite"
-           tests="8"
+           tests="12"
            failures="0"
            errors="0"
            skipped="0"
-           time="78.731">
+           time="124.660">
   <properties />
   
   
-            <testcase name="loginTest" time="9.577" classname="com.cybage.alm.test.TestSuite" />
-                <testcase name="loginTest" time="9.913" classname="com.cybage.alm.test.TestSuite" />
-                <testcase name="loginTest" time="9.399" classname="com.cybage.alm.test.TestSuite" />
-                <testcase name="loginTest" time="10.518" classname="com.cybage.alm.test.TestSuite" />
-                <testcase name="loginTest" time="9.423" classname="com.cybage.alm.test.TestSuite" />
-                <testcase name="loginTest" time="9.897" classname="com.cybage.alm.test.TestSuite" />
-                <testcase name="loginTest" time="9.661" classname="com.cybage.alm.test.TestSuite" />
-                <testcase name="loginTest" time="10.343" classname="com.cybage.alm.test.TestSuite" />
+            <testcase name="loginTest" time="10.038" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="loginTest" time="9.668" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="registerTest" time="11.931" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="loginTest" time="9.375" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="loginTest" time="9.631" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="registerTest" time="11.637" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="loginTest" time="10.390" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="registerTest" time="11.004" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="loginTest" time="9.757" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="loginTest" time="9.560" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="registerTest" time="11.496" classname="com.cybage.alm.test.TestSuite" />
+                <testcase name="loginTest" time="10.173" classname="com.cybage.alm.test.TestSuite" />
       
 </testsuite>

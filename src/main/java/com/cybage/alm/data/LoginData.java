@@ -1,16 +1,23 @@
 package com.cybage.alm.data;
 
+import org.apache.poi.ss.usermodel.Row;
+
 public class LoginData {
 
 	public String userName;
-	public String passowrd;
+	public String password;
 
 	public LoginData(String userName, String passowrd) {
 		super();
 		this.userName = userName;
-		this.passowrd = passowrd;
+		this.password = passowrd;
 	}
-
+	public LoginData buildLoginData(Row row) {
+		LoginData ld = new LoginData();
+		ld.setUserName(row.getCell(0).toString().trim());
+		ld.setPassword(row.getCell(1).toString().trim());
+		return ld;
+	}
 	public LoginData() {
 		// TODO Auto-generated constructor stub
 	}
@@ -23,12 +30,12 @@ public class LoginData {
 		this.userName = userName;
 	}
 
-	public String getPassowrd() {
-		return passowrd;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassowrd(String passowrd) {
-		this.passowrd = passowrd;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

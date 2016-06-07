@@ -9,13 +9,11 @@ import com.cybage.alm.data.LoginData;
 
 public class LoginPage {
 
-	public void signin(Object i, Object loginData) {
+	public void signin(LoginData data) {
 		WebDriver driver = new Driver().getDriver();
-		LoginData data = (LoginData) loginData;
-
 		driver.get("http://newtours.demoaut.com");
 		driver.findElement(By.name("userName")).sendKeys(data.getUserName());
-		driver.findElement(By.name("password")).sendKeys(data.getPassowrd());
+		driver.findElement(By.name("password")).sendKeys(data.getPassword());
 		driver.findElement(By.name("login")).click();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(

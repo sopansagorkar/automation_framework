@@ -1,140 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79729" started-at="2016-06-06T08:59:48Z" finished-at="2016-06-06T09:01:08Z">
+  <suite name="Default suite" duration-ms="45712" started-at="2016-06-07T11:37:48Z" finished-at="2016-06-07T11:38:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79729" started-at="2016-06-06T08:59:48Z" finished-at="2016-06-06T09:01:08Z">
+    <test name="Default test" duration-ms="45712" started-at="2016-06-07T11:37:48Z" finished-at="2016-06-07T11:38:33Z">
       <class name="com.cybage.alm.test.TestSuite">
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="10413" started-at="2016-06-06T14:29:48Z" data-provider="loginData" finished-at="2016-06-06T14:29:59Z">
+        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="12125" started-at="2016-06-07T17:07:48Z" data-provider="registerData" finished-at="2016-06-07T17:08:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@496bc455]]>
+                <![CDATA[com.cybage.alm.data.RegisterData@4a8355dd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="10329" started-at="2016-06-06T14:29:59Z" data-provider="loginData" finished-at="2016-06-06T14:30:09Z">
+        </test-method> <!-- registerTest -->
+        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="10996" started-at="2016-06-07T17:08:00Z" data-provider="registerData" finished-at="2016-06-07T17:08:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@b78a709]]>
+                <![CDATA[com.cybage.alm.data.RegisterData@625abb97]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="10573" started-at="2016-06-06T14:30:09Z" data-provider="loginData" finished-at="2016-06-06T14:30:19Z">
+        </test-method> <!-- registerTest -->
+        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="11060" started-at="2016-06-07T17:08:11Z" data-provider="registerData" finished-at="2016-06-07T17:08:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@72cf2de5]]>
+                <![CDATA[com.cybage.alm.data.RegisterData@7516e4e5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="9596" started-at="2016-06-06T14:30:19Z" data-provider="loginData" finished-at="2016-06-06T14:30:29Z">
+        </test-method> <!-- registerTest -->
+        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="11164" started-at="2016-06-07T17:08:22Z" data-provider="registerData" finished-at="2016-06-07T17:08:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@e077866]]>
+                <![CDATA[com.cybage.alm.data.RegisterData@2313052e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="9881" started-at="2016-06-06T14:30:29Z" data-provider="loginData" finished-at="2016-06-06T14:30:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@37b70343]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="9219" started-at="2016-06-06T14:30:39Z" data-provider="loginData" finished-at="2016-06-06T14:30:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@4cc6fa2a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="9170" started-at="2016-06-06T14:30:48Z" data-provider="loginData" finished-at="2016-06-06T14:30:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@666b83a4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.Object, java.lang.Object)[pri:2, instance:com.cybage.alm.test.TestSuite@43301423]" name="loginTest" duration-ms="10195" started-at="2016-06-06T14:30:57Z" data-provider="loginData" finished-at="2016-06-06T14:31:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[com.cybage.alm.data.LoginData@295eaa7c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
+        </test-method> <!-- registerTest -->
       </class> <!-- com.cybage.alm.test.TestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
