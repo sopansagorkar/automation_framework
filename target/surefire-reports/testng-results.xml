@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="79051" started-at="2016-06-02T12:33:46Z" finished-at="2016-06-02T12:35:05Z">
+    <groups>
+    </groups>
+    <test name="Regression Test Suite" duration-ms="79051" started-at="2016-06-02T12:33:46Z" finished-at="2016-06-02T12:35:05Z">
+      <class name="com.cybage.alm.test.TestSuite">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="10518" started-at="2016-06-02T18:03:47Z" data-provider="loginData" finished-at="2016-06-02T18:03:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sopan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sopan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="9897" started-at="2016-06-02T18:03:57Z" data-provider="loginData" finished-at="2016-06-02T18:04:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="9661" started-at="2016-06-02T18:04:07Z" data-provider="loginData" finished-at="2016-06-02T18:04:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sneha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sneha]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="9913" started-at="2016-06-02T18:04:17Z" data-provider="loginData" finished-at="2016-06-02T18:04:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shiva]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shiva]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="9399" started-at="2016-06-02T18:04:27Z" data-provider="loginData" finished-at="2016-06-02T18:04:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shashank]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shashank]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="9577" started-at="2016-06-02T18:04:36Z" data-provider="loginData" finished-at="2016-06-02T18:04:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shekhar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shekhar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="9423" started-at="2016-06-02T18:04:45Z" data-provider="loginData" finished-at="2016-06-02T18:04:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manju]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manju]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cybage.alm.test.TestSuite@46d56d67]" name="loginTest" duration-ms="10343" started-at="2016-06-02T18:04:55Z" data-provider="loginData" finished-at="2016-06-02T18:05:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ashwini]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ashwini]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.cybage.alm.test.TestSuite -->
+    </test> <!-- Regression Test Suite -->
+  </suite> <!-- Suite1 -->
+</testng-results>
