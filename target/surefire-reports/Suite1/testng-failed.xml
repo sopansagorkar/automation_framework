@@ -13,4 +13,13 @@
       <class name="com.cybage.alm.test.TestSuite"/>
     </classes>
   </test> <!-- Regression Test Suite -->
+  <test name="Regression Test Suite(failed)">
+    <classes>
+      <class name="com.cybage.alm.test.TestSuite">
+        <methods>
+          <include name="loginTest" invocation-numbers="2 3 4 5 6"/>
+        </methods>
+      </class> <!-- com.cybage.alm.test.TestSuite -->
+    </classes>
+  </test> <!-- Regression Test Suite(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

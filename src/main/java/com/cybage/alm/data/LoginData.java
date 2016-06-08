@@ -17,8 +17,8 @@ public class LoginData {
 
 	public static LoginData buildLoginData(Row row) {
 		LoginData ld = new LoginData();
-		ld.setUserName(row.getCell(0).toString().trim());
-		ld.setPassword(row.getCell(1).toString().trim());
+		ld.setUserName(row.getCell(1).toString().trim());
+		ld.setPassword(row.getCell(2).toString().trim());
 		return ld;
 	}
 
@@ -32,7 +32,7 @@ public class LoginData {
 			workbook = new XSSFWorkbook(fis);
 		} catch (Exception e) {
 		}
-		sheet = workbook.getSheetAt(0);
+		sheet = workbook.getSheet(SheetName);
 
 		Iterator<Row> rowIterator = sheet.iterator();
 		while (rowIterator.hasNext()) {

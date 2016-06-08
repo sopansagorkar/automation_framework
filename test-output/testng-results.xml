@@ -1,57 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45712" started-at="2016-06-07T11:37:48Z" finished-at="2016-06-07T11:38:33Z">
+  <suite name="Suite1" duration-ms="4" started-at="2016-06-08T13:02:30Z" finished-at="2016-06-08T13:02:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45712" started-at="2016-06-07T11:37:48Z" finished-at="2016-06-07T11:38:33Z">
-      <class name="com.cybage.alm.test.TestSuite">
-        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="12125" started-at="2016-06-07T17:07:48Z" data-provider="registerData" finished-at="2016-06-07T17:08:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.cybage.alm.data.RegisterData@4a8355dd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="10996" started-at="2016-06-07T17:08:00Z" data-provider="registerData" finished-at="2016-06-07T17:08:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.cybage.alm.data.RegisterData@625abb97]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="11060" started-at="2016-06-07T17:08:11Z" data-provider="registerData" finished-at="2016-06-07T17:08:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.cybage.alm.data.RegisterData@7516e4e5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method status="PASS" signature="registerTest(com.cybage.alm.data.RegisterData)[pri:1, instance:com.cybage.alm.test.TestSuite@43301423]" name="registerTest" duration-ms="11164" started-at="2016-06-07T17:08:22Z" data-provider="registerData" finished-at="2016-06-07T17:08:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.cybage.alm.data.RegisterData@2313052e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-      </class> <!-- com.cybage.alm.test.TestSuite -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="Regression Test Suite" duration-ms="4" started-at="2016-06-08T13:02:30Z" finished-at="2016-06-08T13:02:30Z">
+    </test> <!-- Regression Test Suite -->
+  </suite> <!-- Suite1 -->
 </testng-results>

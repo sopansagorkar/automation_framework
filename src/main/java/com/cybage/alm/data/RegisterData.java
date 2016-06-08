@@ -52,7 +52,7 @@ public class RegisterData {
 			workbook = new XSSFWorkbook(fis);
 		} catch (Exception e) {
 		}
-		sheet = workbook.getSheetAt(0);
+		sheet = workbook.getSheet(SheetName);
 
 		Iterator<Row> rowIterator = sheet.iterator();
 		while (rowIterator.hasNext()) {
