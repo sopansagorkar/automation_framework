@@ -8,7 +8,7 @@ import com.cybage.alm.utilities.Base;
 
 public class LoginPage extends Base{
 
-	public static void signin(LoginData data) {
+	public void signin(LoginData data) {
 		setup();
 		driver.get("http://newtours.demoaut.com");
 		driver.findElement(By.name("userName")).sendKeys(data.getUserName());

@@ -8,7 +8,7 @@ import com.cybage.alm.utilities.Base;
 
 public class ResgisterPage extends Base{
 
-	public static void register(RegisterData registerData) {
+	public void register(RegisterData registerData) {
 		setup();
 		driver.get("http://newtours.demoaut.com");
 		driver.findElement(By.linkText("REGISTER")).click();

@@ -15,12 +15,14 @@ public class TestSuite1 extends Base{
 
 	@Test(dataProvider = "loginData", priority = 2, dataProviderClass = DataProviders.class)
 	public void loginTest(LoginData loginData) {
-		LoginPage.signin(loginData);
+		LoginPage loginPage=new LoginPage();
+		loginPage.signin(loginData);
 	}
 
 	@Test(dataProvider = "registerData", priority = 1, dataProviderClass = DataProviders.class)
 	public void registerTest(RegisterData registerData) {
-		ResgisterPage.register(registerData);
+		ResgisterPage resgisterPage =new ResgisterPage();
+		resgisterPage.register(registerData);
 	}
 }
 
