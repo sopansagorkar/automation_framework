@@ -61,7 +61,6 @@ public class RegisterData {
 				continue;
 			arrayList.add(registerData.buildRegisterData(row));
 		}
-		System.out.println(arrayList.size());
 		tabArray = new RegisterData[arrayList.size()][1];
 		for (int i = 0; i < arrayList.size(); i++) {
 
@@ -75,7 +74,7 @@ public class RegisterData {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
+	private void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
@@ -83,7 +82,7 @@ public class RegisterData {
 		return lastName;
 	}
 
-	public void setLastName(String lastName) {
+	private void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
@@ -91,7 +90,7 @@ public class RegisterData {
 		return phone;
 	}
 
-	public void setPhone(String phone) {
+	private void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -99,7 +98,7 @@ public class RegisterData {
 		return email;
 	}
 
-	public void setEmail(String email) {
+	private void setEmail(String email) {
 		this.email = email;
 	}
 
@@ -107,7 +106,7 @@ public class RegisterData {
 		return address;
 	}
 
-	public void setAddress(String address) {
+	private void setAddress(String address) {
 		this.address = address;
 	}
 
@@ -115,7 +114,7 @@ public class RegisterData {
 		return city;
 	}
 
-	public void setCity(String city) {
+	private void setCity(String city) {
 		this.city = city;
 	}
 
@@ -123,7 +122,7 @@ public class RegisterData {
 		return state;
 	}
 
-	public void setState(String state) {
+	private void setState(String state) {
 		this.state = state;
 	}
 
@@ -131,7 +130,7 @@ public class RegisterData {
 		return pincode;
 	}
 
-	public void setPincode(String pincode) {
+	private void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
 
@@ -139,7 +138,7 @@ public class RegisterData {
 		return country;
 	}
 
-	public void setCountry(String country) {
+	private void setCountry(String country) {
 		this.country = country;
 	}
 
@@ -147,7 +146,7 @@ public class RegisterData {
 		return uName;
 	}
 
-	public void setuName(String uName) {
+	private void setuName(String uName) {
 		this.uName = uName;
 	}
 
@@ -155,7 +154,7 @@ public class RegisterData {
 		return passWord;
 	}
 
-	public void setPassWord(String passWord) {
+	private void setPassWord(String passWord) {
 		this.passWord = passWord;
 	}
 

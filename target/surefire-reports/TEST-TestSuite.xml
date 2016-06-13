@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="123.869" tests="12" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="79.304" tests="8" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_65\jre\bin"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\Mars Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7168529682911372620.tmp"/>
+    <property name="classworlds.conf" value="D:\Mars Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6822431012097879062.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_65\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Perl64\site\bin;C:\Perl64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files\Java\jdk1.8.0_65/bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\apache-maven-3.2.1\bin\bin;C:\apache-ant-1.8.2\bin;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\bin\;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\apache-maven-3.2.1\bin;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;C:\Program Files (x86)\Skype\Phone\;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\bin;C:\Program Files\Docker Toolbox;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_65\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Cybage Software Pvt. Ltd\CybagePCMClient\;C:\Program Files (x86)\Cybage Software Pvt. Ltd\CybagePCMClient\;C:\Program Files (x86)\Cybage Software Pvt. Ltd\CybagePCMClient\;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Perl64\site\bin;C:\Perl64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files\Java\jdk1.8.0_65/bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\apache-maven-3.2.1\bin\bin;C:\apache-ant-1.8.2\bin;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\bin\;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\apache-maven-3.2.1\bin;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;C:\Program Files (x86)\Skype\Phone\;C:\Applications\Atlassian\atlassian-plugin-sdk-6.1.0\bin;C:\Program Files\Docker Toolbox;D:\Utilities\eclipse-jee-mars-R-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -43,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_65\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,71 +60,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="10.721"/>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="10.594"/>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="9.294">
-    <failure message="expected [SIGN-ON] but found [SIGN-OFF]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="10.26">
+    <failure message="expected [SIGN-OFF] but found [SIGN-ON]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-OFF] but found [SIGN-ON]
+	at com.cybage.alm.test.TestSuite2.loginTest(TestSuite2.java:21)
 </failure>
   </testcase>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="8.822">
-    <failure message="expected [SIGN-ON] but found [SIGN-OFF]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="9.456">
+    <failure message="expected [SIGN-OFF] but found [SIGN-ON]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-OFF] but found [SIGN-ON]
+	at com.cybage.alm.test.TestSuite2.loginTest(TestSuite2.java:21)
 </failure>
   </testcase>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="9.378">
-    <failure message="expected [SIGN-ON] but found [SIGN-OFF]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="9.476"/>
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="8.841"/>
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="9.712"/>
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="9.527"/>
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="9.58"/>
+  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite2" time="11.527">
+    <failure message="expected [SIGN-OFF] but found [SIGN-ON]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-OFF] but found [SIGN-ON]
+	at com.cybage.alm.test.TestSuite2.loginTest(TestSuite2.java:21)
 </failure>
   </testcase>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="9.81">
-    <failure message="expected [SIGN-ON] but found [SIGN-OFF]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
-</failure>
-  </testcase>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="9.269">
-    <failure message="expected [SIGN-ON] but found [SIGN-OFF]" type="java.lang.AssertionError">java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
-</failure>
-  </testcase>
-  <testcase name="loginTest" classname="com.cybage.alm.test.TestSuite" time="10.161"/>
-  <testcase name="registerTest" classname="com.cybage.alm.test.TestSuite" time="11.571"/>
-  <testcase name="registerTest" classname="com.cybage.alm.test.TestSuite" time="11.354"/>
-  <testcase name="registerTest" classname="com.cybage.alm.test.TestSuite" time="11.698"/>
-  <testcase name="registerTest" classname="com.cybage.alm.test.TestSuite" time="11.197"/>
 </testsuite>

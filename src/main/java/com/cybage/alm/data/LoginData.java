@@ -41,7 +41,6 @@ public class LoginData {
 				continue;
 			arrayList.add(buildLoginData(row));
 		}
-		System.out.println(arrayList.size());
 		tabArray = new LoginData[arrayList.size()][1];
 		for (int i = 0; i < arrayList.size(); i++) {
 

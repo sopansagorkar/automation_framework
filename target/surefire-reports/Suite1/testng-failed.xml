@@ -10,16 +10,17 @@
       <package name="com.cybage.alm.test"/>
     </packages>
     <classes>
-      <class name="com.cybage.alm.test.TestSuite"/>
+      <class name="com.cybage.alm.test.TestSuite2"/>
     </classes>
   </test> <!-- Regression Test Suite -->
   <test name="Regression Test Suite(failed)">
     <classes>
-      <class name="com.cybage.alm.test.TestSuite">
+      <class name="com.cybage.alm.test.TestSuite2">
         <methods>
-          <include name="loginTest" invocation-numbers="2 3 4 5 6"/>
+          <include name="loginTest" invocation-numbers="0 1 7"/>
+          <include name="teadDown"/>
         </methods>
-      </class> <!-- com.cybage.alm.test.TestSuite -->
+      </class> <!-- com.cybage.alm.test.TestSuite2 -->
     </classes>
   </test> <!-- Regression Test Suite(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

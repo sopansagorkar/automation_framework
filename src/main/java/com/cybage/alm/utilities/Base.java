@@ -6,20 +6,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Base {
 
 	public static WebDriver driver;
-
+	public static ObjectMap objmap;
 	public static void setup() {
-		// initialize driver
-		driver=new FirefoxDriver();
-		// launch browser
-
-		// OpenExcel -- call this method in Excel class
-
+		driver = new FirefoxDriver();
+		objmap=new ObjectMap(Links.propFilePath);
 	}
 
 	public static void quit() {
-
-		// quit driver
-		// Close excel
+		driver.close();
 	}
 
 }

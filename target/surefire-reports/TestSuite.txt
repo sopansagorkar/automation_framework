@@ -1,59 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 124.838 sec <<< FAILURE!
-loginTest(com.cybage.alm.test.TestSuite)  Time elapsed: 9.294 sec  <<< FAILURE!
-java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 79.304 sec <<< FAILURE! - in TestSuite
+loginTest(com.cybage.alm.test.TestSuite2)  Time elapsed: 10.26 sec  <<< FAILURE!
+java.lang.AssertionError: expected [SIGN-OFF] but found [SIGN-ON]
+	at com.cybage.alm.test.TestSuite2.loginTest(TestSuite2.java:21)
 
-loginTest(com.cybage.alm.test.TestSuite)  Time elapsed: 8.822 sec  <<< FAILURE!
-java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
+loginTest(com.cybage.alm.test.TestSuite2)  Time elapsed: 9.456 sec  <<< FAILURE!
+java.lang.AssertionError: expected [SIGN-OFF] but found [SIGN-ON]
+	at com.cybage.alm.test.TestSuite2.loginTest(TestSuite2.java:21)
 
-loginTest(com.cybage.alm.test.TestSuite)  Time elapsed: 9.378 sec  <<< FAILURE!
-java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
-
-loginTest(com.cybage.alm.test.TestSuite)  Time elapsed: 9.81 sec  <<< FAILURE!
-java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
-
-loginTest(com.cybage.alm.test.TestSuite)  Time elapsed: 9.269 sec  <<< FAILURE!
-java.lang.AssertionError: expected [SIGN-ON] but found [SIGN-OFF]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.cybage.alm.pages.LoginPage.signin(LoginPage.java:20)
-	at com.cybage.alm.test.TestSuite.loginTest(TestSuite.java:18)
+loginTest(com.cybage.alm.test.TestSuite2)  Time elapsed: 11.527 sec  <<< FAILURE!
+java.lang.AssertionError: expected [SIGN-OFF] but found [SIGN-ON]
+	at com.cybage.alm.test.TestSuite2.loginTest(TestSuite2.java:21)
 

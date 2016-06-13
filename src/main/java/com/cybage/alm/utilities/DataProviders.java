@@ -17,7 +17,7 @@ public class DataProviders extends Links {
 
 	@DataProvider(name = "registerData")
 	public Object[][] registerDataProvider() {
-		Object[][] data = RegisterData.getRegisterData(excelPath, registerSheet);
+		RegisterData[][] data = RegisterData.getRegisterData(excelPath, registerSheet);
 		return data;
 	}
 
