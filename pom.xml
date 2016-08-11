@@ -55,6 +55,11 @@
 			<artifactId>selenium-firefox-driver</artifactId>
 			<version>2.53.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -62,11 +67,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
-				<executions>
-					<execution>
-						<phase>test</phase>
-					</execution>
-				</executions>
 				<configuration>
 					<properties>
 						<!-- Setting ReportNG listeners -->
@@ -80,36 +80,6 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>com.thed.zapi</groupId>
-				<artifactId>zapi-maven-plugin</artifactId>
-				<version>0.1</version>
-				<executions>
-					<execution>
-						<phase>test</phase>
-						<goals>
-							<goal>zapi</goal>
-						</goals>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.doxia</groupId>
-						<artifactId>doxia-sink-api</artifactId>
-						<version>1.1.2</version>
-					</dependency>
-				</dependencies>
-			</plugin>
 		</plugins>
 	</build>
-	<properties>
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<zapi.url>http://172.27.59.62:8080/</zapi.url>
-		<zapi.versionId>10000</zapi.versionId>
-		<zapi.userName>admin</zapi.userName>
-		<zapi.password>cybage@123</zapi.password>
-		<zapi.projectId>10000</zapi.projectId>
-		<zapi.cyclePrefix>Hello</zapi.cyclePrefix>
-	</properties>
 </project>

@@ -21,4 +21,10 @@ public class DataProviders extends Links {
 		return data;
 	}
 
+	@DataProvider(name = "appendTest")
+	public Object[][] appendDataProvider() {
+		LoginData[][] data = LoginData.getLoginData(excelPath, loginSheet);
+		return data;
+	}
+
 }
