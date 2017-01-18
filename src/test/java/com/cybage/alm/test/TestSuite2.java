@@ -23,7 +23,7 @@ public class TestSuite2 extends Base implements ITest {
 		loginPage.signin(loginData);
 	}
 
-	@Test(dataProvider = "registerData", priority = 2, dataProviderClass = DataProviders.class)
+	@Test(dataProvider = "registerData", priority = 2, dataProviderClass = DataProviders.class,enabled=false)
 	public void registerTest(RegisterData registerData) throws Exception {
 		ResgisterPage resgisterPage = new ResgisterPage();
 		resgisterPage.register(registerData);
